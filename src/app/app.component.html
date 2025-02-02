@@ -1,1 +1,14 @@
-<router-outlet />
+<mat-toolbar class="app-nav">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <span>Markdown Editor</span>
+  <span class="flex-1"></span> 
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container mx-auto w-11/12 py-3">
+  <router-outlet />
+</div>
