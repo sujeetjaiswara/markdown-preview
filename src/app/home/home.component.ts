@@ -13,7 +13,11 @@ export class HomeComponent {
   outputContent: string = '';
 
   async onInputText() {
-    const html = await marked.parse(this.inputContent);
+    const html = await marked.parse(this.inputContent, {
+      // async: true,
+      // pedantic: false,
+      // gfm: true,
+    });
     this.outputContent = html;
   }
 }
