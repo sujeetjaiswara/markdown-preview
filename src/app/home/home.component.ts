@@ -13,11 +13,9 @@ export class HomeComponent {
   outputContent: string = '';
 
   async onInputText() {
-    const html = await marked.parse(this.inputContent, {
-      // async: true,
-      // pedantic: false,
-      // gfm: true,
-    });
+    const html = await marked.parse(this.inputContent);
+    // const tokens = marked.lexer(this.inputContent);
+    // const html = marked.parser(tokens);
     this.outputContent = html;
   }
 }
