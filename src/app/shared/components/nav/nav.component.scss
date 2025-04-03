@@ -1,0 +1,18 @@
+@use "@angular/material" as mat;
+
+.app-nav {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: #880e4f,
+      container-text-color: #fff,
+      standard-height: 3.4rem,
+      title-text-size: 1.1rem,
+    )
+  );
+
+  @include mat.icon-button-overrides(
+    (
+      icon-color:#fff
+    )
+  );
+}
