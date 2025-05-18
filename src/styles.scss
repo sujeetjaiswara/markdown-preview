@@ -1,17 +1,13 @@
 // Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
 
 html {
+  color-scheme: light;
   @include mat.theme(
     (
-      color: (
-        theme-type: light,
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
+      color: mat.$rose-palette,
       typography: Roboto,
-      density: 0,
+      density: -1,
     )
   );
 }
@@ -24,7 +20,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: rgb(255, 238, 252);
+  background-color: var(--mat-sys-surface);
 }
 
 @tailwind base;

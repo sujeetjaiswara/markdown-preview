@@ -3,8 +3,8 @@
 .app-nav {
   @include mat.toolbar-overrides(
     (
-      container-background-color: #880e4f,
-      container-text-color: #fff,
+      container-background-color: var(--mat-sys-primary),
+      container-text-color: var(--mat-sys-surface),
       standard-height: 3.4rem,
       title-text-size: 1.1rem,
     )
@@ -12,7 +12,7 @@
 
   @include mat.icon-button-overrides(
     (
-      icon-color:#fff
+      icon-color: var(--mat-sys-surface),
     )
   );
 }
